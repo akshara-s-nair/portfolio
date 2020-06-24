@@ -1,12 +1,9 @@
 <template>
-  <div class="img">
-    <img src="/0.jpeg" class="Pic" />
-  </div>
+  <img src="/0.jpeg" class="Pic" />
 </template>
 
 <style>
 .Pic {
-  vertical-align: middle;
   border-radius: 100%;
   width: auto;
   max-width: 400px;
@@ -19,6 +16,13 @@
 @keyframes appear {
   0% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Pic {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
 </style>

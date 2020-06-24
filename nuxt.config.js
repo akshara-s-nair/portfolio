@@ -22,7 +22,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:700' },
+      { rel: 'stylesheet', href: 'https://assets.calendly.com/assets/external/widget.css' }
     ]
   },
   /*
@@ -50,9 +52,21 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
+    [
+      'nuxt-fontawesome', {
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ]
+
   ],
   /*
   ** Content module configuration

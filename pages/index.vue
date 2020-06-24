@@ -1,60 +1,50 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="main">
+    <div class="sub">
       <ProfilePic />
-      <h1 class="title">
-        Akshara S Nair
-      </h1>
-      
+      <Heading />
+    </div>
+
+    <div class="sub">
+      <Card />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
-body{
+body {
+  margin: 0;
+  padding: 0;
   background: #000000;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-self: center;
+  align-content: center;
+  overflow: hidden;
+}
+.sub {
+  display: flex;
+  align-items:center;
+  align-content: space-between;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 5rem;
-  color: #ffffff;
-  letter-spacing: 1px;
+@media screen and (max-width: 1000px) {
+  .sub {
+    flex-direction: column;
+  }
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-
 </style>
