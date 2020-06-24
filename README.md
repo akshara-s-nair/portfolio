@@ -1,5 +1,10 @@
 # My portfolio page built on Nuxt.JS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f204309b-0275-49cf-9acb-81393e0b7f28/deploy-status)](https://app.netlify.com/sites/reverent-bohr-e4fc2e/deploys)
+
+
+#### aksharasnair.live
+
 ## Build Setup
 
 ```bash

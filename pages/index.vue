@@ -1,28 +1,11 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <ProfilePic />
       <h1 class="title">
-        portfolio
+        Akshara S Nair
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -32,6 +15,9 @@ export default {}
 </script>
 
 <style>
+body{
+  background: #000000;
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -54,8 +40,8 @@ export default {}
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-size: 5rem;
+  color: #ffffff;
   letter-spacing: 1px;
 }
 
@@ -70,4 +56,5 @@ export default {}
 .links {
   padding-top: 15px;
 }
+
 </style>
