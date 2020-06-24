@@ -1,12 +1,15 @@
 <template>
-  <div class="main">
-    <div class="sub">
-      <ProfilePic />
-      <Heading />
-    </div>
+  <div>
+    <BackDrop />
+    <div class="main">
+      <div class="sub">
+        <ProfilePic />
+        <Heading />
+      </div>
 
-    <div class="sub">
-      <Card />
+      <div class="sub">
+        <Card />
+      </div>
     </div>
   </div>
 </template>
@@ -36,10 +39,9 @@ body {
 }
 .sub {
   display: flex;
-  align-items:center;
+  align-items: center;
   align-content: space-between;
   justify-content: space-around;
-  padding: 10px;
 }
 
 @media screen and (max-width: 1000px) {
